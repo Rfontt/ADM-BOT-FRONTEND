@@ -1,0 +1,14 @@
+.container {
+    background-image: url('../../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#efect {
+    text-align: center;
+    font-size: 30px;
+}
+
+.icon {
+    margin-top: 1rem;
+}
