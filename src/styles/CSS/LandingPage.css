@@ -12,3 +12,11 @@
 .icon {
     margin-top: 1rem;
 }
+
+.info-social-network:hover {
+    transform: scale(1.1);
+}
+
+.list {
+    margin-top: 2rem;
+}

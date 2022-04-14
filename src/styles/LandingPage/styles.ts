@@ -53,3 +53,23 @@ export const InfoSocialNetwork = styled.div`
     flex-direction: column;
     align-items: center;
  `
+
+export const ButtonSocialNetwork = styled.button`
+    border-color: ${props => props.theme.colors.background};
+    width: 80%;
+    height: 2.5rem;
+    background-color: #080A12;
+    margin: auto;
+    border-radius: 4px;
+    color: ${props => props.theme.colors.background};
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+`
+
+export const ListText = styled.li`
+    margin-top: 1rem;
+    color: ${props => props.theme.colors.background};
+    font-family: 'Roboto', sans-serif;
+`

@@ -19,3 +19,9 @@ This project is about a bot which control my social networks. This part is about
 ```
 npm run dev
 ```
+
+# Photos
+
+- Landing page
+
+<img src="../adm-bot-frontend/imagesGitHub/LandingPage.png" />

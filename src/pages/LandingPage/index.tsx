@@ -1,14 +1,12 @@
 import type { NextPage } from 'next'
 import * as S from '../../styles/LandingPage/styles'
-import InstagramIcon from '../../assets/instagram.svg'
-import TwitterIcon from '../../assets/twitter.svg'
-import LinkedinIcon from '../../assets/linkedin.svg'
+import listOfDetails from '../../utils/listOfDatailsSocialNetwork'
 
 const LandingPage : NextPage = () => {
     return (
         <S.Container className='container'>
             <S.Content>
-                <S.Title className='title'>ADM-BOT</S.Title>
+                <S.Title className='title'>ADMIN-BOT</S.Title>
                 <S.Division />
 
                 <S.Subtitle>
@@ -19,17 +17,25 @@ const LandingPage : NextPage = () => {
             </S.Content>
 
             <S.SocialNetWorkContainer>
-                <S.InfoSocialNetwork>
-                    <InstagramIcon className='icon' />
-                </S.InfoSocialNetwork>
+                {
+                    listOfDetails.map((item) => {
+                        const Image = item.image;
 
-                <S.InfoSocialNetwork>
-                    <TwitterIcon className='icon' />
-                </S.InfoSocialNetwork>
+                        return (
+                            <S.InfoSocialNetwork className='info-social-network'>
+                                <Image className='icon' />
 
-                <S.InfoSocialNetwork>
-                    <LinkedinIcon className='icon' />
-                </S.InfoSocialNetwork>
+                                <ul className='list'>
+                                    <S.ListText>{item.condition01}</S.ListText>
+                                    <S.ListText>{item.condition02}</S.ListText>
+                                    <S.ListText>{item.condition03}</S.ListText>
+                                </ul>
+
+                                <S.ButtonSocialNetwork>Schedule</S.ButtonSocialNetwork>
+                            </S.InfoSocialNetwork>
+                        )
+                    })
+                }
             </S.SocialNetWorkContainer>
 
         </S.Container>
