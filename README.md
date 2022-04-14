@@ -24,4 +24,4 @@ npm run dev
 
 - Landing page
 
-<img src="../adm-bot-frontend/imagesGitHub/LandingPage.png" />
+<img src="./imagesGitHub/LandingPage.png />
