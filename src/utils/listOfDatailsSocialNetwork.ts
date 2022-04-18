@@ -5,6 +5,7 @@ import LinkedinIcon from '../assets/linkedin.svg'
 
 const listOfDetails: ListOfDatails[] = [
     {
+        id: 1,
         condition01: 'Make a posts with photos;',
         condition02: 'Shedule posts;',
         condition03: '5 posts for day.',
@@ -12,6 +13,7 @@ const listOfDetails: ListOfDatails[] = [
     },
 
     {
+        id: 2,
         condition01: 'Make a posts with photos;',
         condition02: 'Shedule posts;',
         condition03: 'Include tags.',
@@ -19,6 +21,7 @@ const listOfDetails: ListOfDatails[] = [
     },
 
     {
+        id: 3,
         condition01: 'Make a posts with photos;',
         condition02: 'Shedule posts;',
         condition03: '3 posts for day.',

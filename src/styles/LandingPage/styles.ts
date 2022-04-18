@@ -1,15 +1,54 @@
-import styled from "styled-components";
-import ImageBackground from '../../assets/background.jpg'
+import styled from "styled-components"
 
 export const Container = styled.div`
     width: ${props => props.theme.size.width};
     height: ${props => props.theme.size.height};
     display: flex;
     align-items: center;
-    flex-direction: column ;
+    flex-direction: column;
+
+    @media (max-width: 800px) {
+        .social-netWork-container {
+            flex-direction: column;
+            width: 100vw;
+            height: 100rem;
+            background: -webkit-linear-gradient(180deg, #080A12 0%, rgba(20, 20, 20, 20) 100%);
+            margin-top: 0;
+        }
+
+        .info-social-network {
+            width: 100vw;
+            border-radius: 0;
+            margin-top: 0;
+        }
+
+        .info-social-network:hover {
+            transform: none;
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px 20px 5px 20px;
+            margin: 0;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            margin-top: 1rem;
+
+            #efect {
+                margin: 1rem;
+                font-size: 18px;
+            }
+        }
+    }
 `
 
-export const Content = styled.div`
+export const Header = styled.div`
     margin-top: 2rem;
     display: flex;
     align-items: center;
@@ -19,7 +58,7 @@ export const Content = styled.div`
 `
 
 export const Division = styled.hr`
-    width: 90%;
+    width: 100%;
     color: white;
 `
 
@@ -38,9 +77,11 @@ export const Subtitle = styled.span`
 `
 
 export const SocialNetWorkContainer = styled.div`
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
-    margin-top: 2rem;
+    justify-content: center;
 `
 
 export const InfoSocialNetwork = styled.div`
