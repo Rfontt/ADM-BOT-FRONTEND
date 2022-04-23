@@ -6,26 +6,29 @@ import LinkedinIcon from '../assets/linkedin.svg'
 const listOfDetails: ListOfDatails[] = [
     {
         id: 1,
+        name: 'Instagram',
         condition01: 'Make a posts with photos;',
         condition02: 'Shedule posts;',
         condition03: '5 posts for day.',
-        image: InstagramIcon
+        image: InstagramIcon,
     },
 
     {
         id: 2,
+        name: 'Twitter',
         condition01: 'Make a posts with photos;',
         condition02: 'Shedule posts;',
         condition03: 'Include tags.',
-        image: TwitterIcon
+        image: TwitterIcon,
     },
 
     {
         id: 3,
+        name: 'Linkedin',
         condition01: 'Make a posts with photos;',
         condition02: 'Shedule posts;',
         condition03: '3 posts for day.',
-        image: LinkedinIcon
+        image: LinkedinIcon,
     }
 ]
 

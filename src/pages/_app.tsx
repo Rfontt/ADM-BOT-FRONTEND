@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../styles/Configs/theme';
 
 import './../styles/CSS/LandingPage.css'
-
+import './../styles/CSS/TwitterAutomation.css'
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
       <ThemeProvider theme={theme}>

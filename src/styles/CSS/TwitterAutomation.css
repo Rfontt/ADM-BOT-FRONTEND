@@ -1,0 +1,86 @@
+.container-twitter {
+    background-image: url('../../assets/background-automation.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+hr {
+    width: 100%;
+    color: white;
+}
+
+.division {
+    display: flex;
+    width: 80rem;
+    height: 100vh;
+}
+
+.division .come-back {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.come-back .come-back-button {
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-form {
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-form h1 {
+    color: white;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-form span {
+    color: white;
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-main {
+    width: 40rem;
+    height: 40rem;
+    margin: 2rem;
+    border-radius: 8px;
+    background: -webkit-linear-gradient(180deg, #080A12 0%, rgba(20, 20, 20, 20) 100%);;
+    box-shadow: #080A12 1px 8px 7px 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-main .logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-main .inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Link from 'next/link'
 
 export const Container = styled.div`
     width: ${props => props.theme.size.width};
@@ -113,4 +114,9 @@ export const ListText = styled.li`
     margin-top: 1rem;
     color: ${props => props.theme.colors.background};
     font-family: 'Roboto', sans-serif;
+`
+
+export const Navigate = styled(Link)`
+    text-decoration: none;
+    color: white;
 `

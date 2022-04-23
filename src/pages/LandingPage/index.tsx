@@ -1,8 +1,18 @@
 import type { NextPage } from 'next'
+import { NextRouter, useRouter } from 'next/router'
 import * as S from '../../styles/LandingPage/styles'
 import listOfDetails from '../../utils/listOfDatailsSocialNetwork'
 
 const LandingPage : NextPage = () => {
+    const router: NextRouter = useRouter();
+
+    function handleNavigate(query: string): void {
+        router.push({
+            pathname: '/Automation',
+            query: { name: query }
+        });
+    }
+
     return (
         <S.Container className='container'>
             <S.Header className='header'>
@@ -34,7 +44,9 @@ const LandingPage : NextPage = () => {
                                     <S.Division />
                                 </ul>
 
-                                <S.ButtonSocialNetwork>Schedule</S.ButtonSocialNetwork>
+                                <S.ButtonSocialNetwork onClick={() => handleNavigate(item.name)}>
+                                    Schedule
+                                </S.ButtonSocialNetwork>
                             </S.InfoSocialNetwork>
                         )
                     })
